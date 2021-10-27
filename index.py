@@ -1,5 +1,7 @@
 import discord #묘듈 불러오기
-token = "OTAyODEwNjM1OTU0NDI5OTYz.YXj17Q.-EA6bOZ2s0AnbGmD2zkMxQb76Co" #봇 토큰 설정하기
+import os
+
+
 client = discord.Client() #client 설정하기
 
 @client.event
@@ -22,5 +24,5 @@ async def on_message(message): #사용자가 메세지를 입력했을때
         await message.channel.send("교복")
 
 
-    
-client.run(token)
+access_token = os.environ["BOT_TOKEN"]                        
+client.run(access_token)
