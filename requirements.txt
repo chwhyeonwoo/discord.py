@@ -1,1 +1,1 @@
-discord.py==98.6 - Stable
+discord.py==98.6
